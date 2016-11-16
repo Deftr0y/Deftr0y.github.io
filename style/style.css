@@ -1,0 +1,126 @@
+@font-face {
+    font-family: font1;
+    src: url(fonts/font1.ttf);
+}
+
+@font-face {
+    font-family: font2;
+    src: url(fonts/font2.ttf);
+}
+
+@font-face {
+    font-family: font3;
+    src: url(fonts/font3.ttf);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        -webkit-transform: scale(0.8);
+        position: absolute;
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        -webkit-transform: scale(0.8);
+        position: absolute;
+    }
+}
+
+body {
+    color: #ff584c;
+    background-color: #292421;
+    font-family: font3, serif;
+    margin: 0;
+}
+
+.header {
+    padding: 0 50px 20px 50px;
+}
+
+.mainMenu {
+    width: 100%;
+    background-color: black;
+    box-shadow: 0 10px 20px #888888;
+    text-align: left;
+    top: 0px;
+    left: 0px;
+    padding: 0 20px 0 10px;
+}
+
+.menuOption {
+    color: white;
+    display: block;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px #888888;
+}
+
+.changingContent {
+    text-align: center;
+}
+
+.changingContent.ng-enter {
+   // animation: fadeIn 0.5s;
+}
+
+.changingContent.ng-leave {
+  //  animation: fadeOut 0.5s;
+}
+
+.displayCell {
+    margin-bottom: 120px;
+}
+
+h1 {
+    font-size: 40px;
+    color: black;
+    text-shadow: 0 0 15px #888888;
+    font-family: font2, serif;
+}
+
+h2 {
+    font-size: 15px;
+    color: #ff584c;
+    text-shadow: 0 0 15px black;
+    font-family: font2, serif;
+}
+
+h3 {
+    font-size: 40px;
+    color: black;
+    text-shadow: 0 0 15px #888888;
+    font-family: font2, serif;
+}
+
+button {
+    padding: 6px;
+    margin: 10px;
+    border-radius: 2px;
+    background: #ff584c;
+    border: 2px solid #292421;
+    color: #292421;
+    font-family: font3, serif;
+    cursor: pointer;
+    outline: none;
+    transition: 0.5s;
+}
+
+button:hover {
+    padding: 15px;
+    box-shadow: 0 0 15px #888888;
+}
+
+button:active {
+    background-color: white;
+}
+
+.ng-hide {
+    height: 0;
+    width: 0;
+    background-color: transparent;
+    top: -200px;
+    left: 200px;
+}

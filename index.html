@@ -1,1 +1,51 @@
-dido!!!
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/readable/bootstrap.min.css">
+    <!-- import project CSS-->
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <!-- import AngularJS-->
+    <script src="http://code.angularjs.org/1.2.13/angular.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-route.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-animate.js"></script>
+    <!-- import Jquary-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <!-- app -->
+    <script src="js/app.js"></script>
+    <!-- Controllers -->
+    <script src="js/controllers/main.ctrl.js"></script>
+    <script src="js/controllers/resume.ctrl.js"></script>
+    <script src="js/controllers/page3.ctrl.js"></script>
+    <script src="js/controllers/page4.ctrl.js"></script>
+    <!-- Sticky Div script-->
+    <script src="js/stickyDiv.js"></script>
+    <title>Ilai Perez Web Site</title>
+</head>
+
+<body ng-app="ilaiWebsite">
+    <div class="header">
+        <h1>Deftroy</h1>
+        <h2>"Research Is to See What Everybody Else Has Seen and Think What Nobody Has Thought" - Albert Szent-Gyorgyi</h2>
+    </div>
+    <div class="stickyPlaceHolder">
+        <div class="mainMenu">
+            <a href="#/home">
+                <button class="MenuButton"><span>Home</span></button>
+            </a>
+            <a href="#/resume">
+                <button class="MenuButton"><span>3D work</span></button>
+            </a>
+            <a href="#/page3">
+                <button class="MenuButton"><span>Programming</span></button>
+            </a>
+            <a href="#/page4">
+                <button class="MenuButton"><span>Resume</span></button>
+            </a>
+        </div>
+    </div>
+    <div class="changingContent" ng-controller="mainCtrl" ng-view>
+    </div>
+</body>
+
+</html>
