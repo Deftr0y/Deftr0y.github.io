@@ -37,7 +37,28 @@ body {
 }
 
 .header {
-    padding: 0 50px 20px 50px;
+    padding: 20px 50px 20px 50px;
+}
+
+.links {
+    padding: 5px 5px 5px 5px;
+    float: right;
+    display: inline;
+    background-color: #ff584c;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+.linkImg {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    transition: 0.5s;
+}
+
+.linkImg:hover {
+    width: 50px;
+    height: 50px;
 }
 
 .mainMenu {
@@ -64,11 +85,11 @@ body {
 }
 
 .changingContent.ng-enter {
-   // animation: fadeIn 0.5s;
+    // animation: fadeIn 0.5s;
 }
 
 .changingContent.ng-leave {
-  //  animation: fadeOut 0.5s;
+    //animation: fadeOut 0.5s;
 }
 
 .displayCell {
@@ -80,6 +101,7 @@ h1 {
     color: black;
     text-shadow: 0 0 15px #888888;
     font-family: font2, serif;
+    display: inline-block;
 }
 
 h2 {

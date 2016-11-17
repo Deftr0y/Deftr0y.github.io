@@ -5,6 +5,8 @@
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/readable/bootstrap.min.css">
     <!-- import project CSS-->
     <link rel="stylesheet" type="text/css" href="style/style.css">
+    <!-- set site icon-->
+    <link rel="icon" href="fixtures\images\icons\deftroy\icon256.ico">
     <!-- import AngularJS-->
     <script src="http://code.angularjs.org/1.2.13/angular.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-route.js"></script>
@@ -26,22 +28,22 @@
 <body ng-app="ilaiWebsite">
     <div class="header">
         <h1>Deftroy</h1>
-        <h2>"Research Is to See What Everybody Else Has Seen and Think What Nobody Has Thought" - Albert Szent-Gyorgyi</h2>
+        <div class="links">
+            <a href="https://sketchfab.com/deftroy"><img src="fixtures\images\icons\sketchfab.png" alt="SketchFab" class="linkImg"></a>
+            <a href="https://github.com/deftr0y"><img src="fixtures\images\icons\linkedin.png" alt="LinkedIn" class="linkImg"></a>
+            <a href="https://www.linkedin.com/in/ilai-perez-10b161126">
+                <img src="fixtures\images\icons\github.png" alt="GitHub" class="linkImg">
+            </a>
+        </div>
+        <br/>
+        <h2>Software Developer and 3D designer</h2>
     </div>
     <div class="stickyPlaceHolder">
         <div class="mainMenu">
-            <a href="#/home">
-                <button class="MenuButton"><span>Home</span></button>
-            </a>
-            <a href="#/3d">
-                <button class="MenuButton"><span>3D work</span></button>
-            </a>
-            <a href="#/prog">
-                <button class="MenuButton"><span>Programming</span></button>
-            </a>
-            <a href="#/resume">
-                <button class="MenuButton"><span>Resume</span></button>
-            </a>
+            <a href="#/home"><button class="MenuButton"><span>Home</span></button></a>
+            <a href="#/3d"><button class="MenuButton"><span>3D work</span></button></a>
+            <a href="#/prog"><button class="MenuButton"><span>Programming</span></button></a>
+            <a href="#/resume"><button class="MenuButton"><span>Resume</span></button></a>
         </div>
     </div>
     <div class="changingContent" ng-controller="mainCtrl" ng-view>
