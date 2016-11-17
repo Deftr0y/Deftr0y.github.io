@@ -105,14 +105,14 @@ h1 {
 }
 
 h2 {
-    font-size: 15px;
+    font-size: 25px;
     color: #ff584c;
     text-shadow: 0 0 15px black;
     font-family: font2, serif;
 }
 
 h3 {
-    font-size: 40px;
+    font-size: 15px;
     color: black;
     text-shadow: 0 0 15px #888888;
     font-family: font2, serif;
