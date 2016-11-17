@@ -1,6 +1,7 @@
 /* global app */
-app.controller('mainCtrl', ['$scope', '$http', function ($scope, $http) {
-    $scope.title = 'A Wolderfull Title Of An Image Gallery!'
+app.controller('3dCtrl', ['$scope', '$http', function($scope, $http) {
+    $scope.title = '3D work';
+
 
     // Translate model ID to embed URL:
     $scope.embedUrl = modelId => {
@@ -24,4 +25,5 @@ app.controller('mainCtrl', ['$scope', '$http', function ($scope, $http) {
                 id: '0d2ab169abce4754b5df4d22acafb8d2'
             }]
         })
+        
 }])

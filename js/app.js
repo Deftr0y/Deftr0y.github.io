@@ -13,19 +13,19 @@ app.config(function($sceDelegateProvider, $routeProvider) {
     ]);
     $routeProvider.when('/home', {
             controller: 'mainCtrl',
-            templateUrl: 'home.html'
+            templateUrl: 'pages/home.html'
+        })
+        .when('/3d', {
+            controller: '3dCtrl',
+            templateUrl: 'pages/3d.html'
+        })
+        .when('/prog', {
+            controller: 'programmingCtrl',
+            templateUrl: 'pages/programming.html'
         })
         .when('/resume', {
             controller: 'resumeCtrl',
             templateUrl: 'pages/resume.html'
-        })
-        .when('/page3', {
-            controller: 'page3Ctrl',
-            templateUrl: 'pages/tempPage3.html'
-        })
-        .when('/page4', {
-            controller: 'page4Ctrl',
-            templateUrl: 'pages/tempPage4.html'
         })
         .otherwise({
             redirectTo: '/home'
