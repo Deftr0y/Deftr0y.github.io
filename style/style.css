@@ -93,7 +93,13 @@ body {
 }
 
 .displayCell {
+	margin: auto;
     margin-bottom: 120px;
+    width: 640px;
+}
+
+p {
+    color: white;
 }
 
 h1 {
@@ -105,7 +111,7 @@ h1 {
 }
 
 h2 {
-    font-size: 25px;
+    font-size: 20px;
     color: #ff584c;
     text-shadow: 0 0 15px black;
     font-family: font2, serif;
