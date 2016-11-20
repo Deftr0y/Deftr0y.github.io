@@ -53,22 +53,24 @@ body {
     width: 40px;
     height: 40px;
     margin: 5px;
+    border-radius: 30px;
     transition: 0.5s;
 }
 
 .linkImg:hover {
     width: 50px;
     height: 50px;
+    box-shadow: 0 0 25px white;
 }
 
 .mainMenu {
-    width: 100%;
-    background-color: black;
-    box-shadow: 0 10px 20px #888888;
+    background-image: url("images/triWall2.png");
     text-align: left;
     top: 0px;
     left: 0px;
-    padding: 0 20px 0 10px;
+    padding: auto;
+    transition: 0.4s;
+    width: 100%;
 }
 
 .menuOption {
@@ -77,31 +79,27 @@ body {
     padding: 5px;
     border-radius: 5px;
     box-shadow: 0 0 15px #888888;
+    margin: auto;
 }
 
 .changingContent {
-    text-align: center;
     padding-top: 20px;
+    text-align: center;
 }
-
 .changingContent.ng-enter {
-    // animation: fadeIn 0.5s;
+     //animation: fadeIn 1s;
 }
-
 .changingContent.ng-leave {
-    //animation: fadeOut 0.5s;
+    // animation: fadeOut 0.5s;
 }
-
 .displayCell {
-	margin: auto;
+    margin: auto;
     margin-bottom: 120px;
     width: 640px;
 }
-
 p {
     color: white;
 }
-
 h1 {
     font-size: 40px;
     color: black;
@@ -109,43 +107,38 @@ h1 {
     font-family: font2, serif;
     display: inline-block;
 }
-
 h2 {
     font-size: 20px;
     color: #ff584c;
     text-shadow: 0 0 15px black;
     font-family: font2, serif;
 }
-
 h3 {
     font-size: 15px;
     color: black;
     text-shadow: 0 0 15px #888888;
     font-family: font2, serif;
 }
-
 button {
     padding: 6px;
     margin: 10px;
-    border-radius: 2px;
     background: #ff584c;
     border: 2px solid #292421;
+    border-radius: 3px;
     color: #292421;
     font-family: font3, serif;
     cursor: pointer;
     outline: none;
     transition: 0.5s;
 }
-
 button:hover {
     padding: 15px;
     box-shadow: 0 0 15px #888888;
+    color: white;
 }
-
 button:active {
     background-color: white;
 }
-
 .ng-hide {
     height: 0;
     width: 0;
