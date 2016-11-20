@@ -71,6 +71,7 @@ body {
     padding: auto;
     transition: 0.4s;
     width: 100%;
+    z-index: 1;
 }
 
 .menuOption {
@@ -82,24 +83,49 @@ body {
     margin: auto;
 }
 
-.changingContent {
+.changingContentOuter {
+    position: relative;
     padding-top: 20px;
     text-align: center;
 }
+
+.changingContent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    opacity: 1;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
 .changingContent.ng-enter {
-     //animation: fadeIn 1s;
+    opacity: 0;
 }
+
+.changingContent.ng-enter-active {
+    opacity: 1;
+}
+
 .changingContent.ng-leave {
-    // animation: fadeOut 0.5s;
+    opacity: 1;
 }
+
+.changingContent.ng-leave-active {
+    opacity: 0;
+}
+
 .displayCell {
     margin: auto;
     margin-bottom: 120px;
     width: 640px;
 }
+
 p {
     color: white;
 }
+
 h1 {
     font-size: 40px;
     color: black;
@@ -107,18 +133,21 @@ h1 {
     font-family: font2, serif;
     display: inline-block;
 }
+
 h2 {
     font-size: 20px;
     color: #ff584c;
     text-shadow: 0 0 15px black;
     font-family: font2, serif;
 }
+
 h3 {
     font-size: 15px;
     color: black;
     text-shadow: 0 0 15px #888888;
     font-family: font2, serif;
 }
+
 button {
     padding: 6px;
     margin: 10px;
@@ -131,14 +160,17 @@ button {
     outline: none;
     transition: 0.5s;
 }
+
 button:hover {
     padding: 15px;
     box-shadow: 0 0 15px #888888;
     color: white;
 }
+
 button:active {
     background-color: white;
 }
+
 .ng-hide {
     height: 0;
     width: 0;

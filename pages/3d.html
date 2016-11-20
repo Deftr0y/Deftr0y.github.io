@@ -1,9 +1,7 @@
 <h1>3D WORK</h1>
-<div class="display" ng-repeat="model in mayaModels" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel="">
-    <div class="displayCell">
-        </iframe>
-        <h2>{{ model.title }}</h2>
-        <iframe width="640" height="480" src="{{ model.src || embedUrl(model.id) }}" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
-        <p>{{ model.des }}</p>
-    </div>
+<div class="displayCell" ng-repeat="model in mayaModels">
+    </iframe>
+    <h2>{{ model.title }}</h2>
+    <iframe width="640" height="480" src="{{ model.src || embedUrl(model.id) }}" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
+    <p>{{ model.des }}</p>
 </div>
